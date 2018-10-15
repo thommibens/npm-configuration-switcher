@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "description": "Save and switch yours npm configurations",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
+  "homepage": "https://github.com/thommibens/npm-configuration-switcher#README.md",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/thommibens/npm-configuration-switcher.git"
   },
+  "scripts": {},
   "keywords": [
     "cli",
     "utility",
@@ -20,6 +23,7 @@
     "user-home": "^2.0.0",
     "uuid": "^3.3.2"
   },
+  "preferGlobal":true,
   "bin":{
     "ncs":"./index.js"
   }
