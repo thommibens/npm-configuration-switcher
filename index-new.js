@@ -3,7 +3,6 @@
 var userHome = require('user-home');
 var program = require('commander');
 var clc = require("cli-color");
-const switcher = require('./switch');
 const configManager = require('./configManager');
 const fs = require('fs');
 const path = require('path');
