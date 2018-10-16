@@ -40,7 +40,7 @@ You can access tool via command line, with `ncs`
   ```
   This print the content of the configuration corresponding to the given name
   
-### Get the content of a configuration
+### Switch configuration
   ```console
   $ ncs switch  <configuration name>
   ```
