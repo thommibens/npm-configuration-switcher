@@ -22,7 +22,7 @@ You can access tool via command line, with `ncs`
   $ ncs current
   ```
   This print the name of the current configuration.
-  If you want to print the current configuratio content use:
+  If you want to print the current configuration content use:
   ```console
   $ ncs current --show
   ```
@@ -46,7 +46,7 @@ You can access tool via command line, with `ncs`
   ```
   This command change the current configuration with the configuration (previously created with `$ ncs new`)
   corresponding to the given name.
- > The previous "current" configuration will be stored as-is so if you changed it by `$ npm config set`, changes woll be preserved
+ > The previous "current" configuration will be stored as-is so if you changed it by `$ npm config set`, changes will be preserved
 
 
   
