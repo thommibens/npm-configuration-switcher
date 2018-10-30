@@ -1,9 +1,8 @@
 # NPM Configuration Switcher
-A simple tool made to try to improve my skills with Nodejs.
-It allows to have multiple configuration of NPM (basing on file .npmrc) and switch between them.
+A simple tool that allows to have multiple configuration of NPM (based on file `.npmrc` at user home level) and switch between them.
 
 ## Install
-  ```console 
+  ```console
   $ npm install npm-configuration-switcher -g
   ```
 The configuration at the moment of the install will be named `default`
