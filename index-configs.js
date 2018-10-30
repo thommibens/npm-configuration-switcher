@@ -2,17 +2,18 @@ const userHome = require('user-home');
 const files = require('./files');
 const configManager = require('./configManager');
 const path = require('path');
-var clc = require("cli-color");
-var fs = require('fs');
-var program = require('commander');
+const log = require("./logs").log;
+const colors = require("./logs").colors;
+const fs = require('fs');
+const program = require('commander');
 
 
 program.action(function () {
     let configurations = configManager.getConfigs();
 
-    console.log(clc.green('Stored configurations:'))
+    log.ok('Stored configurations:\n');
     configurations.forEach(element => {
-        console.log(clc.yellow(element.name))
+        log.info(`${element.name}\n`);
     });
 });
 

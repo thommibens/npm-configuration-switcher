@@ -1,18 +1,14 @@
 #!/usr/bin/env node
 
-var userHome = require('user-home');
-var program = require('commander');
-var clc = require("cli-color");
-//const switcher = require('./switch').switcher;
+const userHome = require('user-home');
+const program = require('commander');
+const colors = require("./logs").colors;
+const log = require("./logs").log;
 const configManager = require('./configManager');
 
-const error=clc.red.bold;
-
-const err = process.stderr.write;
-const errorInfo = clc.red.bold.bgYellow;
 
 program
-  .version('0.5.0');
+  .version('0.1.3');
 
 // index-switch.js
 program
@@ -27,12 +23,16 @@ program
 program
     .command("new [name] [options]",'create a new confuguration with the sepcified name');
 
+// index-get.js
 program
     .command("get [name]",'show the content of the specified configuration');
 
+// index-configs.js
 program
     .command("configs",'show all stored configurations');
 
+
+// Check if the given args are present
 function checkMandatoryArgFn (...argsNames) {
     let getOrNull = (list,index) => {
         if( index >= list.length)
@@ -45,7 +45,7 @@ function checkMandatoryArgFn (...argsNames) {
             let param = getOrNull(args, i);
             if(null === param || typeof "" !== typeof param){
                 ok = false;
-                process.stderr.write(error(`No ${errorInfo(argsNames[i])} parameter given.\n`))
+                log.error(`No ${colors.errorInfo(argsNames[i])} parameter given.\n`);
             }
         }
         if(! ok){
