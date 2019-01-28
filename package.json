@@ -8,7 +8,10 @@
     "type": "git",
     "url": "https://github.com/thommibens/npm-configuration-switcher.git"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "mocha  --recursive",
+    "test:debug": "mocha --recursive --inspect"
+  },
   "keywords": [
     "cli",
     "utility",
@@ -19,6 +22,7 @@
   "dependencies": {
     "cli-color": "^1.4.0",
     "commander": "^2.19.0",
+    "rimraf": "^2.6.3",
     "user-home": "^2.0.0",
     "uuid": "^3.3.2"
   },
@@ -33,6 +37,6 @@
   },
   "devDependencies": {
     "mocha": "^5.2.0",
-    "mock-fs": "^4.7.0"
+    "rewire": "^4.0.1"
   }
 }
