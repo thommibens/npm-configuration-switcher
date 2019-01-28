@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const userHome = require('user-home');
 const program = require('commander');
 const log = require("./logs").log;
 const colors = require("./logs").colors;
