@@ -1,4 +1,4 @@
-# NPM Configuration Switcher
+# NPM Configuration Switcher  ![image](https://travis-ci.org/thommibens/npm-configuration-switcher.svg?branch=master)
 A simple tool that allows to have multiple configuration of NPM (based on file `.npmrc` at user home level) and switch between them.
 
 ## Install
