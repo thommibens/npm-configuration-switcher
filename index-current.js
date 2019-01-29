@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const userHome = require('user-home');
 const files = require('./files');
 const configManager = require('./configManager');
 const path = require('path');

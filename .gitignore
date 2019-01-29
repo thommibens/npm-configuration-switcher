@@ -1,3 +1,6 @@
 node_modules/
 package-lock.json
 .vscode/
+coverage/
+test/testfs/.npmrc
+test/testfs/.nec
