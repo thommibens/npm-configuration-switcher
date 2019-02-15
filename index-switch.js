@@ -29,8 +29,10 @@ function switchConfig ( configName ) {
         var fileToLoad = path.join(files.configFolder, config.file);
         var fileToUnload =  path.join(files.configFolder, oldConfig.file);
 
-
-        var current = fs.readFileSync(files.npmrc);
+        var current = '';
+        if(fs.existsSync(files.npmrc))
+            current = fs.readFileSync(files.npmrc);
+            
         var toLoad = fs.readFileSync(fileToLoad);
 
         fs.writeFileSync(fileToUnload, current);

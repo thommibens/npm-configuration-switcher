@@ -15,8 +15,13 @@ program
 .action((cmd, options) => {
     let current = configManager.getCurrentConfig();
     log.ok(`Current NPM  config is: ${colors.info(current)}\n`);
+   
     if(options && options.show){
-        var conf = fs.readFileSync(files.npmrc);
+
+        var conf = '';
+        if(fs.existsSync(files.npmrc))
+            conf = fs.readFileSync(files.npmrc);
+
         log.info('\n');
         log.ok('Configuration content: \n');
         log.info(conf);
