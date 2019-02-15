@@ -1,10 +1,18 @@
 # NPM Configuration Switcher  ![image](https://travis-ci.org/thommibens/npm-configuration-switcher.svg?branch=master)
 A simple tool that allows to have multiple configuration of NPM (based on file `.npmrc` at user home level) and switch between them.
 
+#Changes
+> Fixed linux compatibility
+
 ## Install
   ```console
   $ npm install npm-configuration-switcher -g
   ```
+  If do not you have permission to install it globally:
+    ```console
+  $ sudo npm install npm-configuration-switcher -g
+  ```
+
 The configuration at the moment of the install will be named `default`
 
 ## Usage
