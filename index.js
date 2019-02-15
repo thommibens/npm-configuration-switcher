@@ -8,7 +8,7 @@ const configManager = require('./configManager');
 
 
 program
-  .version('0.1.4');
+  .version('0.2.1');
 
 // index-switch.js
 program
