@@ -8,8 +8,9 @@ A simple tool that allows to have multiple configuration of NPM (based on file `
   ```console
   $ npm install npm-configuration-switcher -g
   ```
+
   If do not you have permission to install it globally:
-    ```console
+  ```console
   $ sudo npm install npm-configuration-switcher -g
   ```
 
