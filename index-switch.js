@@ -1,4 +1,4 @@
-#!/usr/bin/env node --harmony
+#!/usr/bin/env node
 
 const userHome = require('user-home');
 const files = require('./files');
@@ -32,7 +32,7 @@ function switchConfig ( configName ) {
         var current = '';
         if(fs.existsSync(files.npmrc))
             current = fs.readFileSync(files.npmrc);
-            
+
         var toLoad = fs.readFileSync(fileToLoad);
 
         fs.writeFileSync(fileToUnload, current);
